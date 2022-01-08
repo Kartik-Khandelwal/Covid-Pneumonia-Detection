@@ -5,10 +5,11 @@ from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model = load_model('Covid.h5')
 
 def predict(testing_image):
-
+    
+    model = load_model('Covid.h5')
+    
     image = Image.open(testing_image).convert('RGB')
     image = image.resize((224,224))
     image = img_to_array(image)
