@@ -1,8 +1,9 @@
 import numpy as np
 import streamlit as st
 from PIL import Image
-from keras.preprocessing.image import img_to_array
-from keras.models import load_model
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.models import load_model
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
