@@ -5,7 +5,7 @@ from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model = load_model('/content/drive/MyDrive/Avataar-Capstone-Project/Covid.h5')
+model = load_model('Covid.h5')
 
 def predict(testing_image):
 
@@ -25,7 +25,7 @@ def predict(testing_image):
         return "Patient is COVID Positive."
 
 def main():
-    st.title('Capstone Project')
+    st.title('Covid-Pneumonia Detection')
     st.subheader('This project will predict whether a person is suffering from Covid or Viral Pneumonia using Radiograph images.')
 
     image = st.file_uploader('Upload Image', type=['jpg', 'jpeg', 'png'])
