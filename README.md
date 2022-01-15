@@ -22,3 +22,4 @@
 * Pillow
 * Streamlit
 * Heroku
+* Kaffeine
